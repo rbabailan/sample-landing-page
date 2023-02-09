@@ -18,7 +18,7 @@ const HeroSection = () => {
             on-campus MBA students, with no mention of the word ‘Online’ or
             ‘Distance-learning’ on the degree.
           </p>
-          <CustomButton text="Free Career Counselling" link="" />
+          <CustomButton text="Free Career Counselling" link="#" />
         </div>
       </div>
     </div>

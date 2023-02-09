@@ -7,8 +7,8 @@ const CardTestimonial = (props) => {
         <img
           className={style.avatarStyles}
           src={props.AvatarImg}
-          width="42px"
-          height="42px"
+          width="56px"
+          height="56px"
         />
         <p>{props.name}</p>
       </div>

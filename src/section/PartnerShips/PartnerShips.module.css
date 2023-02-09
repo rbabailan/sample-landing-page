@@ -1,0 +1,13 @@
+.partnerContainer {
+  padding: 20px;
+}
+
+.headLineWrapper,
+.cardWrapper {
+  text-align: center;
+}
+
+.cardWrapper {
+  overflow: hidden;
+  overflow-x: visible;
+}

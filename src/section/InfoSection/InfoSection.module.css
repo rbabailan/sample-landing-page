@@ -1,0 +1,41 @@
+.infoContainer {
+  width: 100%;
+}
+
+.flexEndCenter {
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+.infosWrapper {
+  text-align: center;
+}
+
+.infosWrapper p:nth-child(1) {
+  margin-bottom: 12px;
+}
+
+.infosWrapper p:nth-child(2) {
+  font-size: 18px;
+}
+
+.infoWrapper {
+  width: max(320px, 50%);
+  background-color: #2f3083;
+  border-radius: 32px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.count {
+  width: 50%;
+  padding: 5px;
+}
+
+.infoWrapper p {
+  margin-bottom: 10px;
+}

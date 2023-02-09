@@ -1,0 +1,9 @@
+.studentTestimonialsContainer {
+  text-align: center;
+}
+
+.cardTestimonialsWrapper {
+  display: flex;
+  padding: 0 100px 50px 100px;
+  gap: 5px;
+}

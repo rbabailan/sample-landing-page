@@ -1,0 +1,19 @@
+.avatarStyles {
+  border-radius: 50%;
+  border: none;
+  background-color: #808080;
+}
+
+.cardTestimonialWrapper {
+  width: 380px;
+  height: 280px;
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.profileStyles {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  align-items: center;
+}

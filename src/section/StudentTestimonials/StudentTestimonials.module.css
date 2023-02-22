@@ -2,8 +2,18 @@
   text-align: center;
 }
 
+.studentTestimonialsContainer h2 {
+  font-weight: bold;
+  font-size: 32px;
+}
+
 .cardTestimonialsWrapper {
   display: flex;
-  padding: 0 100px 50px 100px;
-  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.testimonialContentWrapper {
+  padding: 20px;
 }

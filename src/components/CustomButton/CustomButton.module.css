@@ -1,10 +1,10 @@
 .linkButton {
   display: inline-block;
   padding: 12px 14px;
-  background-color: #fdcf09;
+  background-color: #f58220;
   text-align: center;
   border-radius: 20px;
   line-height: 15px;
   cursor: pointer;
-  color: #000 !important;
+  color: #f5f5f5 !important;
 }

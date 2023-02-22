@@ -1,27 +1,29 @@
 import style from "./HeroSection.module.css";
 import CustomButton from "../../components/CustomButton/CustomButton";
+import heroImg from "../../img/heroImg.png";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const HeroSection = () => {
   return (
-    <div className={style.heroContainer}>
-      <div className={style.flexCenter}>
-        <div className={style.heroWrapper}>
-          <div className={style.LogoWrapper}>
-            <img
-              src="https://ik.imagekit.io/f2ityjkpdv/lubm-white-logo-300x120.png?ik-sdk-version=javascript-1.4.3&updatedAt=1675936324284"
-              alt="Lincoln University Business and Management Logo"
-            />
-          </div>
-          <h2>Full Time Online MBA Programs in 12 Months</h2>
+    <Container fluid="xxl">
+      <Row className="d-flex vh-100 align-items-center">
+        <Col>
+          <h1>
+            Empower Your Future with <span>Vivo Academy</span>
+          </h1>
           <p>
-            The MBA degree awarded by the University is exactly the same as
-            on-campus MBA students, with no mention of the word ‘Online’ or
-            ‘Distance-learning’ on the degree.
+            Unlock Your Potential and Achieve Success with Our Innovative
+            Programs.
           </p>
-          <CustomButton text="Free Career Counselling" link="#" />
-        </div>
-      </div>
-    </div>
+          <CustomButton text="Apply now" link="# " />
+        </Col>
+        <Col className="d-none d-md-block">
+          <img src={heroImg} alt="hero-img" width="100%" />
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

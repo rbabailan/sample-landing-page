@@ -1,26 +1,29 @@
 .heroContainer {
   height: 100vh;
   width: 100%;
-  background-image: url("https://ik.imagekit.io/f2ityjkpdv/heroImg.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1675932192006");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #0077b6;
 }
 
 .flexCenter {
   height: 100vh;
   display: flex;
   align-items: center;
-  padding: 100px;
 }
 
 .heroWrapper {
   width: 560px;
-  color: #f8f8f8;
+  color: #0f0c0c;
+}
+
+.heroWrapper h2 {
+  font-weight: 800;
+  font-size: 64px;
+  letter-spacing: 0.125rem;
 }
 
 .heroWrapper p {
   margin-bottom: 10px;
+  color: #333333;
 }
 
 @media (max-width: 768px) {

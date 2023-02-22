@@ -10,29 +10,20 @@ const StudentTestimonials = () => {
       <div className={style.studentTestimonialsContainer}>
         <h2 className="pb-4">Testimonials</h2>
         <div className={style.cardTestimonialsWrapper}>
-          <Carousel
-            variant="dark"
-            interval={3000}
-            indicators={false}
-            style={{
-              backgroundColor: "#F0F0F0",
-              borderRadius: "20px",
-            }}>
+          <Carousel variant="dark" interval={3000} indicators={false}>
             {testimonialsData &&
               testimonialsData.map((data, index) => (
-                <Carousel.Item key={index}>
-                  <div className={style.testimonialContentWrapper}>
-                    <Image
-                      src={data.avatarImg}
-                      roundedCircle={true}
-                      width="90px"
-                      height="90px"
-                    />
-                    <p className="m-4">{data.statement}</p>
-                    <p>
-                      <b>{`- ${data.name}, ${data.occupation}`}</b>
-                    </p>
-                  </div>
+                <Carousel.Item
+                  key={index}
+                  className={style.testimonialContentWrapper}>
+                  <Image
+                    src={data.avatarImg}
+                    roundedCircle={true}
+                    width="90px"
+                    height="90px"
+                  />
+                  <p className="fw-light m-4">{data.statement}</p>
+                  <p className="fw-normal">{`- ${data.name}, ${data.occupation}`}</p>
                 </Carousel.Item>
               ))}
           </Carousel>

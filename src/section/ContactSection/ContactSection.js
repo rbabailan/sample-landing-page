@@ -41,9 +41,9 @@ const ContactSection = () => {
                 <Form.Control as="textarea" rows={3} />
               </Form.Group>
               <Button
-                className="rounded-pill pl-3 pr-3"
+                className="rounded-pill pl-3 pr-3 float-end"
                 type="submit"
-                style={{ backgroundColor: "#4db6ac" }}>
+                style={{ backgroundColor: "#4db6ac", border: "none" }}>
                 Submit
               </Button>
             </Form>

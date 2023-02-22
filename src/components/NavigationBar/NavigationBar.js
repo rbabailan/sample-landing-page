@@ -23,7 +23,6 @@ const NavigationBar = () => {
           href="#"
           style={{
             fontFamily: "'Architects Daughter', cursive",
-            fontWeight: "bold",
           }}>
           VIVO ACADEMY
         </Navbar.Brand>
@@ -34,7 +33,7 @@ const NavigationBar = () => {
             <Nav.Link href="#action2">Testimonials</Nav.Link>
             <Nav.Link href="#contactus">Contact us</Nav.Link>
           </Nav>
-          <CustomButton text="Apply Now" />
+          <CustomButton text="Inquire Now" />
         </Navbar.Collapse>
       </Container>
     </Navbar>

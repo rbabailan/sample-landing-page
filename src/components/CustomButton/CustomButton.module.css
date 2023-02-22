@@ -1,7 +1,7 @@
 .linkButton {
   display: inline-block;
   padding: 12px 14px;
-  background-color: #f58220;
+  background-color: #0077b6;
   text-align: center;
   border-radius: 20px;
   line-height: 15px;
@@ -12,5 +12,5 @@
 
 .linkButton:hover {
   text-decoration: none;
-  background-color: #f87400;
+  background-color: #00527e;
 }

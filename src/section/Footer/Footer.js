@@ -10,27 +10,39 @@ const Footer = () => {
   return (
     <Container
       fluid
-      style={{ borderTop: "1px solid #f0f0f0" }}
-      className="p-5 mt-5">
-      <Row className="justify-content-between text-center">
-        <Col>
+      style={{ backgroundColor: "#333333", color: "#F5F5F5" }}
+      className="py-5 mt-4">
+      <Row className="justify-content-between text-center p-0">
+        <Col className="d-none d-lg-block" lg={4}>
           <Link
             activeClass="active"
-            to="contact"
+            to="hero"
             spy={true}
             smooth={true}
-            duration={500}>
+            duration={500}
+            style={{
+              fontFamily: "'Architects Daughter', cursive",
+              cursor: "pointer",
+            }}>
             VIVO ACADEMY
           </Link>
         </Col>
-        <Col className="d-flex justify-content-center align-self-center">
+        <Col
+          className="d-flex justify-content-center align-self-center p-0 mb-2 mb-md-0"
+          sm={12}
+          md={6}
+          lg={4}>
           <Stack direction="horizontal" gap={3}>
             <FooterLinks text="Benefits" />
             <FooterLinks text="Testimonials" />
             <FooterLinks text="Contact us" />
           </Stack>
         </Col>
-        <Col className="d-flex justify-content-center">
+        <Col
+          className="d-flex justify-content-center p-0"
+          sm={12}
+          md={6}
+          lg={4}>
           <Stack direction="horizontal" gap={2}>
             <RoundedLinks brands={brands("twitter")} />
             <RoundedLinks brands={brands("facebook-f")} />
@@ -45,7 +57,7 @@ const Footer = () => {
 
 const FooterLinks = (props) => {
   return (
-    <a>
+    <a href="#" className="text-decoration-none" style={{ color: "#F5F5F5" }}>
       <p className="m-0">{props.text}</p>
     </a>
   );
@@ -57,7 +69,7 @@ const RoundedLinks = (props) => {
       <button
         className="rounded-circle border-0"
         style={{ width: "36px", height: "36px" }}>
-        <FontAwesomeIcon icon={props.brands} color="#0f0f0f" size="lg" />
+        <FontAwesomeIcon icon={props.brands} color="#0f0f0f" />
       </button>
     </a>
   );

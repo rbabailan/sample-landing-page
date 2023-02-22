@@ -17,3 +17,8 @@
 .testimonialContentWrapper {
   padding: 20px;
 }
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 100% !important;
+}

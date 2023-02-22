@@ -30,9 +30,9 @@ const NavigationBar = () => {
         <Navbar.Toggle aria-controls="navbarScroll" className="border-0" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="justify-content-end flex-grow-1 pe-3" navbarScroll>
-            <Nav.Link href="#action1">Benefits</Nav.Link>
+            <Nav.Link href="#ac">Benefits</Nav.Link>
             <Nav.Link href="#action2">Testimonials</Nav.Link>
-            <Nav.Link href="#action3">Contact us</Nav.Link>
+            <Nav.Link href="#contactus">Contact us</Nav.Link>
           </Nav>
           <CustomButton text="Apply Now" />
         </Navbar.Collapse>

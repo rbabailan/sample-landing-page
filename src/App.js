@@ -4,6 +4,7 @@ import StudentTestiminionals from "./section/StudentTestimonials/StudentTestimin
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import ContactSection from "./section/ContactSection/ContactSection";
 import Footer from "./section/Footer/Footer";
+import { Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (

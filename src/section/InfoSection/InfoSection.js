@@ -5,18 +5,19 @@ import Col from "react-bootstrap/Col";
 import infoImg from "../../img/infoImg.png";
 import infoImg2 from "../../img/infoImg2.png";
 import infoImg3 from "../../img/infoImg3.png";
+import { Element } from "react-scroll";
 
 const InfoSection = () => {
   return (
-    <Container fluid="xxl">
-      <div className={style.infoContainer}>
+    <Element name="benefits">
+      <Container fluid="xxl">
         <div className={style.flexEndCenter}>
           <h2 className="text-center">
             "Unlock Your Potential: Experience the Life-Changing Benefits of
             Enrolling in Vivo Academy!"
           </h2>
         </div>
-        <Row className="d-flex flex-wrap-reverse align-items-center">
+        <Row className="d-flex flex-wrap-reverse align-items-center my-4 my-lg-0">
           <Col xs={12} sm={6} md={6}>
             <h4>Innovative Programs</h4>
             <p>
@@ -31,7 +32,7 @@ const InfoSection = () => {
             <img src={infoImg} width="100%" />
           </Col>
         </Row>
-        <Row className="d-flex align-items-center">
+        <Row className="d-flex align-items-center my-4 my-lg-0">
           <Col xs={12} sm={6} md={6}>
             <img src={infoImg2} width="100%" />
           </Col>
@@ -46,7 +47,7 @@ const InfoSection = () => {
             </p>
           </Col>
         </Row>
-        <Row className="d-flex flex-wrap-reverse align-items-center">
+        <Row className="d-flex flex-wrap-reverse align-items-center my-4 my-lg-0">
           <Col xs={12} sm={6} md={6}>
             <h4>Flexible Learning</h4>
             <p>
@@ -62,8 +63,8 @@ const InfoSection = () => {
             <img src={infoImg3} width="100%" />
           </Col>
         </Row>
-      </div>
-    </Container>
+      </Container>
+    </Element>
   );
 };
 

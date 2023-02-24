@@ -11,7 +11,7 @@ const Footer = () => {
     <Container
       fluid
       style={{ backgroundColor: "#333333", color: "#F5F5F5" }}
-      className="py-5 mt-4">
+      className="py-3 py-lg-4">
       <Row className="justify-content-between text-center p-0">
         <Col className="d-none d-lg-block" lg={4}>
           <Link
@@ -57,7 +57,7 @@ const Footer = () => {
 
 const FooterLinks = (props) => {
   return (
-    <a href="#" className="text-decoration-none" style={{ color: "#F5F5F5" }}>
+    <a className="text-decoration-none" style={{ color: "#F5F5F5" }} href="#">
       <p className="m-0">{props.text}</p>
     </a>
   );
@@ -65,7 +65,7 @@ const FooterLinks = (props) => {
 
 const RoundedLinks = (props) => {
   return (
-    <a className="inline-block">
+    <a className="inline-block" href="#">
       <button
         className="rounded-circle border-0"
         style={{ width: "36px", height: "36px" }}>

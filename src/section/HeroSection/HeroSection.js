@@ -1,4 +1,3 @@
-import style from "./HeroSection.module.css";
 import CustomButton from "../../components/CustomButton/CustomButton";
 import heroImg from "../../img/heroImg.png";
 import Container from "react-bootstrap/Container";
@@ -10,12 +9,20 @@ const HeroSection = () => {
   return (
     <Element name="hero">
       <Container fluid="xxl">
-        <Row className="d-flex vh-100 align-items-center">
+        <Row
+          className="d-flex vh-100 align-items-center"
+          style={{ maxHeight: "1080px" }}>
           <Col>
-            <h1>
-              Empower Your Future with <span>Vivo Academy</span>
+            <h1 className="m-0">
+              Empower Your Future with{" "}
+              <span
+                style={{
+                  color: "#0077b6",
+                }}>
+                Vivo Academy
+              </span>
             </h1>
-            <p>
+            <p className="my-2">
               Unlock Your Potential and Achieve Success with Our Innovative
               Programs.
             </p>

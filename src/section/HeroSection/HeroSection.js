@@ -1,5 +1,4 @@
 import CustomButton from "../../components/CustomButton/CustomButton";
-import heroImg from "../../img/heroImg.png";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -26,10 +25,18 @@ const HeroSection = () => {
               Unlock Your Potential and Achieve Success with Our Innovative
               Programs.
             </p>
-            <CustomButton text="Apply now" link="# " />
+            <CustomButton text="Apply now" />
           </Col>
           <Col className="d-none d-md-block">
-            <img src={heroImg} alt="hero-img" width="100%" />
+            <a href="#">
+              <img
+                loading="lazy"
+                className="h-100 w-100"
+                src="https://ik.imagekit.io/f2ityjkpdv/vivo-academy/tr:w-1400,h-auto/heroImg-min.png?"
+                srcSet="https://ik.imagekit.io/f2ityjkpdv/vivo-academy/tr:w-480,h-auto/heroImg-min.png? 470w, https://ik.imagekit.io/f2ityjkpdv/vivo-academy/tr:w-800,h-auto/heroImg-min.png? 1400w"
+                alt="hero-section-img"
+              />
+            </a>
           </Col>
         </Row>
       </Container>

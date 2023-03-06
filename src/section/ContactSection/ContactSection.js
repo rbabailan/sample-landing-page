@@ -3,7 +3,6 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import contactImg from "../../img/contactImg.jpg";
 import { Element } from "react-scroll";
 
 const ContactSection = () => {
@@ -14,7 +13,9 @@ const ContactSection = () => {
         <Row>
           <Col className="d-none d-md-block p-0">
             <img
-              src={contactImg}
+              loading="lazy"
+              src="https://ik.imagekit.io/f2ityjkpdv/vivo-academy/contactImg-min.jpg?"
+              srcSet="https://ik.imagekit.io/f2ityjkpdv/vivo-academy/tr:w-1980,h-auto/contactImg-min.jpg? 1920w ,https://ik.imagekit.io/f2ityjkpdv/vivo-academy/tr:w-1600,h-auto/contactImg-min.jpg? 1600w, https://ik.imagekit.io/f2ityjkpdv/vivo-academy/tr:w-1366,h-auto/contactImg-min.jpg? 1366w,https://ik.imagekit.io/f2ityjkpdv/vivo-academy/tr:w-1024,h-auto/contactImg-min.jpg? 1024w, https://ik.imagekit.io/f2ityjkpdv/vivo-academy/tr:w-780,h-auto/contactImg-min.jpg? 780w, https://ik.imagekit.io/f2ityjkpdv/vivo-academy/tr:w-640,h-auto/contactImg-min.jpg? 500w"
               width="100%"
               height="100%"
               style={{ objectFit: "cover" }}

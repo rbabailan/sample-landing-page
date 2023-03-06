@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import { testimonialsData } from "../../data/testimonialsData";
 import { Element } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { icon, regular } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 const StudentTestimonials = () => {
   return (
